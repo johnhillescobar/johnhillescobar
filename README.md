@@ -16,11 +16,13 @@ PORTFOLIO
 
 a lot of my work is private, but here are some public examples:
 
-| **🏛️ conversational census data** | **🐄 animal disease trends** |
+| **🏛️ conversational census data** | **🗳️ election tally analysis** |
 |:---:|:---:|
-| [census-concierge](https://github.com/johnhillescobar/census-concierge) lets you ask questions in plain language and get back the census table you didn't know existed, the data, and an API URL you can reuse. it's retrieval-first, with an evaluation scoreboard and an enforced anti-drift harness. it grew out of an earlier [langgraph + chroma census tool](https://github.com/johnhillescobar/census_tool) | for the [WOAH datathon](https://github.com/johnhillescobar/woah-datathon-topic6) (latin team), we analyzed two decades of WAHIS outbreak notifications: what counts as "normal" for a disease, flagging significant variations, long-run trends, and whether weather anomalies line up with outbreaks as a basis for early warning |
-| **🏦 banking time series + sentiment** | **👨🏻‍🏫 raising AI literacy** |
-| [this kagglex project](https://github.com/johnhillescobar/KaggleXFDICTimeSeriesSentiment) combines FDIC/FRED banking time series with financial-news sentiment, then models them with XGBoost and LSTMs | [tertuliando](https://github.com/johnhillescobar/tertuliando_ai_demo) is an interactive demo, in spanish, of how system prompts and temperature can steer what a language model says. [containerized agent](https://github.com/johnhillescobar/containerized_agent) is a step-by-step guide to building a langgraph agent with DTOs and running it in docker |
+| [census-concierge](https://github.com/johnhillescobar/census-concierge) lets you ask questions in plain language and get back the census table you didn't know existed, the data, and an API URL you can reuse. it's retrieval-first, with an evaluation scoreboard and an enforced anti-drift harness. watch the [alpha demo](https://www.youtube.com/watch?v=rDVGtEoV_so). it grew out of an earlier [langgraph + chroma census tool](https://github.com/johnhillescobar/census_tool) | after venezuela's disputed july 2024 presidential election, i published the tally-sheet data (24,532 polling-place records) on kaggle and wrote [a gentle analysis](https://www.kaggle.com/code/johnhillescobar1648/a-gentle-analysis-on-the-venezuelan-elections) comparing state-level results against 2018, every number traceable back to the raw data. it comes with video walkthroughs in [english](https://www.youtube.com/watch?v=NM1RtZUG_kY) and [español](https://www.youtube.com/watch?v=tZuOi40IV6U) |
+| **🏦 banking data, from EDA to forecasting** | **🐄 animal disease trends** |
+| i started with an [EDA of FDIC-insured banks](https://www.kaggle.com/code/johnhillescobar1648/fdic-insured-banks-eda): branch vs. bank-level granularity, geography, and asset tiers by census region. next came [time series analysis of FDIC + FRED data](https://www.kaggle.com/code/johnhillescobar1648/fdic-and-fred-time-series-analysis) (decomposition, stationarity, ARIMA with likelihood-ratio tests). it grew into [my kagglex project](https://github.com/johnhillescobar/KaggleXFDICTimeSeriesSentiment) adding news sentiment, XGBoost, and LSTMs ([showcase video](https://www.youtube.com/watch?v=b2zShahrgAA)) | for the [WOAH datathon](https://github.com/johnhillescobar/woah-datathon-topic6) (latin team), we analyzed two decades of WAHIS outbreak notifications: what counts as "normal" for a disease, flagging significant variations, long-run trends, and whether weather anomalies line up with outbreaks as a basis for early warning |
+| **👨🏻‍🏫 raising AI literacy** | **🎥 explaining it out loud** |
+| [tertuliando](https://github.com/johnhillescobar/tertuliando_ai_demo) is an interactive demo, in spanish, of how system prompts and temperature can steer what a language model says. [containerized agent](https://github.com/johnhillescobar/containerized_agent) is a step-by-step guide to building a langgraph agent with DTOs and running it in docker | on [youtube](https://www.youtube.com/@johnhillescobar) i explain, mostly in spanish, why [the same question can get two different answers](https://www.youtube.com/watch?v=0nEZU8sk1Z0) from an AI and [how words are placed within a model](https://www.youtube.com/watch?v=oxc__YW2uU4), plus build-in-public demos of census concierge |
 
 <!--
 WRITING
@@ -28,14 +30,15 @@ WRITING
 
 **✍️ recent writing**
 
-- [the autocomplete society](https://medium.com/@johnhillescobar/the-autocomplete-society-6fa8375c365c) ([en español](https://medium.com/@johnhillescobar/la-sociedad-del-autocompletado-b48413d4ec5a)): is generative AI just garbage-in, garbage-out? i argue that "good data" means something different for analytics than for training a language model, and that the bigger shift is from scarce information to scarce authenticity
+- [the autocomplete society](https://medium.com/@johnhillescobar/the-autocomplete-society-6fa8375c365c) ([en español](https://medium.com/@johnhillescobar/la-sociedad-del-autocompletado-b48413d4ec5a), also on [video](https://www.youtube.com/watch?v=7WEZsE0uYuM)): is generative AI just garbage-in, garbage-out? i argue that "good data" means something different for analytics than for training a language model, and that the bigger shift is from scarce information to scarce authenticity
+- [the mother at the center](https://www.youtube.com/watch?v=Ep5pTLBX2Po): a walkthrough of a 2007 academic paper arguing that the venezuelan family is matricentric, and how that plays out across social classes
 
 <!--
 TOOLBOX
 -->
 
 <p align="center">
-  <i>tools i reach for:</i> python · sql · pandas · scikit-learn · xgboost · pytorch · langchain / langgraph · chroma · fastapi · streamlit · docker · typescript
+  <i>tools i reach for:</i> python · sql · pandas · statsmodels · plotly · scikit-learn · xgboost · pytorch · langchain / langgraph · chroma · fastapi · streamlit · docker · typescript
 </p>
 
 <!--
@@ -48,6 +51,8 @@ SIGNOFF / HYPERLINKED ICONS
 <p align="center">
   <a href="https://www.linkedin.com/in/johnhillescobar/" alt="LinkedIn"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" width="25" height="25"></a>
   <a href="https://medium.com/@johnhillescobar" alt="Medium"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/medium.svg" width="25" height="25"></a>
+  <a href="https://www.youtube.com/@johnhillescobar" alt="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" width="25" height="25"></a>
+  <a href="https://www.kaggle.com/johnhillescobar1648" alt="Kaggle"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/kaggle.svg" width="25" height="25"></a>
 </p>
 
 <p align="center">
